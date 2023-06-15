@@ -44,11 +44,11 @@ View our [Changelog](https://github.com/Shopify/js-buy-sdk/blob/master/CHANGELOG
 ## Installation
 **With Yarn:**
 ```bash
-$ yarn add shopify-buy
+$ yarn add @alirehman7141/shopify-buy
 ```
 **With NPM:**
 ```bash
-$ npm install shopify-buy
+$ npm install @alirehman7141/shopify-buy
 ```
 
 **CDN:**
@@ -76,21 +76,21 @@ The JS Buy SDK has four build versions: ES, CommonJS, AMD, and UMD.
 
 **ES, CommonJS:**
 ```javascript
-import Client from 'shopify-buy';
+import Client from '@alirehman7141/shopify-buy';
 ```
 **AMD:**
 ```javascript
-import Client from 'shopify-buy/index.amd';
+import Client from '@alirehman7141/shopify-buy/index.amd';
 ```
 **UMD:**
 ```javascript
-import Client from 'shopify-buy/index.umd';
+import Client from '@alirehman7141/shopify-buy/index.umd';
 ```
 **UMD Unoptimized:**
 This will be larger than the optimized version, as it will contain all fields that are available in the [Storefront API](https://help.shopify.com/en/api/custom-storefronts/storefront-api/reference). This should only be used when you need to add custom queries to supplement the JS Buy SDK queries.
 
 ```javascript
-import Client from 'shopify-buy/index.unoptimized.umd';
+import Client from '@alirehman7141/shopify-buy/index.unoptimized.umd';
 ```
 
 ## Examples
@@ -99,7 +99,7 @@ import Client from 'shopify-buy/index.unoptimized.umd';
 If your store supports multiple languages, Storefront API can return translated resource types and fields. Learn more about [translating content](https://help.shopify.com/en/api/guides/multi-language/translating-content-api).
 
 ```javascript
-import Client from 'shopify-buy';
+import Client from '@alirehman7141/shopify-buy';
 
 // Initializing a client to return content in the store's primary language
 const client = Client.buildClient({
@@ -292,7 +292,7 @@ Not all fields that are available on the [Storefront API](https://help.shopify.c
 ### Initializing the Client
 ```javascript
 // fetch the large, unoptimized version of the SDK
-import Client from 'shopify-buy/index.unoptimized.umd';
+import Client from '@alirehman7141/shopify-buy/index.unoptimized.umd';
 
 const client = Client.buildClient({
   domain: 'your-shop-name.myshopify.com',
