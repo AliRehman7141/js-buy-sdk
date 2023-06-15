@@ -25788,6 +25788,32 @@
               "deprecationReason": null
             },
             {
+              "name": "tags",
+              "description": "List of product tags.",
+              "args": [
+                {
+                  "name": "first",
+                  "description": "Truncate the array result to this size.",
+                  "type": {
+                    "kind": "SCALAR",
+                    "name": "Int",
+                    "ofType": null
+                  },
+                  "defaultValue": null
+                }
+              ],
+              "type": {
+                "kind": "NON_NULL",
+                "name": null,
+                "ofType": {
+                  "kind": "LIST",
+                  "name": null
+                }
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
               "name": "priceRange",
               "description": "The price range.",
               "args": [],
